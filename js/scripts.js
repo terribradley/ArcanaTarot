@@ -169,7 +169,7 @@ $(function() {
 
   cardsubset.forEach(function(element, index, array) {
     var $img = $('<img>').attr('src', element.image);
-    debugger;
+    // debugger;
     var $text = $('<p>' + element.reading + '</p>');
     $container.append($img);
     $containerTwo.append($text);
