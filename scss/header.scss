@@ -1,0 +1,36 @@
+header {
+  height: 88vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: $color-one;
+  position: relative;
+  .header-images {
+    width: 100%;
+    padding-top: 3%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    img {
+      margin: 3%;
+    }
+  }
+  #line {
+    display: none;
+    position: absolute;
+    top: 92%;
+    left: 23.8%;
+    height: 1px;
+    width: 301px;
+    z-index: 5;
+    background-image: url("../img/card_back.png");
+    background-size: cover;
+
+  }
+  button {
+    position: absolute;
+    right: -200px;
+    bottom: 10px;
+  }
+}

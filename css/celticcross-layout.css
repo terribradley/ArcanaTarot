@@ -1,0 +1,11 @@
+.card-images {
+  width: 90%;
+  margin: 0 5%; }
+  .card-images div {
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%; }
+    .card-images div img:nth-of-type(1) {
+      align-self: center; }
+
+/*# sourceMappingURL=celticcross-layout.css.map */
