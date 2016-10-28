@@ -403,7 +403,7 @@ template {
   display: none; }
 
 header {
-  height: 88vh;
+  min-height: 88vh;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -417,43 +417,29 @@ header {
     align-items: center; }
     header .header-images img {
       margin: 3%; }
-  header #line {
-    display: none;
-    position: absolute;
-    top: 92%;
-    left: 23.8%;
-    height: 1px;
-    width: 301px;
-    z-index: 5;
-    background-image: url("../img/card_back.png");
-    background-size: cover; }
-  header button {
-    position: absolute;
-    right: -200px;
-    bottom: 10px; }
 
-.form-group {
+.form form {
   margin-top: 40px; }
 
-.form-group {
+.form form {
   position: relative; }
-  .form-group[data-is-invalid="true"] .text-box-label, .form-group[data-is-empty="true"] .text-box-label {
+  .form form[data-is-invalid="true"] .text-box-label, .form form[data-is-empty="true"] .text-box-label {
     position: absolute;
     top: -15px;
     font-size: 2em;
     text-shadow: 1px 1px 0 rgba(0, 0, 0, 0.5); }
-  .form-group[data-is-invalid="true"] .bar:before, .form-group[data-is-invalid="true"] .bar:after, .form-group[data-is-empty="true"] .bar:before, .form-group[data-is-empty="true"] .bar:after {
+  .form form[data-is-invalid="true"] .bar:before, .form form[data-is-invalid="true"] .bar:after, .form form[data-is-empty="true"] .bar:before, .form form[data-is-empty="true"] .bar:after {
     width: 100%; }
-  .form-group[data-is-invalid="true"][data-is-invalid="true"] .text-box-label, .form-group[data-is-empty="true"][data-is-invalid="true"] .text-box-label {
+  .form form[data-is-invalid="true"][data-is-invalid="true"] .text-box-label, .form form[data-is-empty="true"][data-is-invalid="true"] .text-box-label {
     color: red !important;
     text-shadow: 1px 1px 0 rgba(0, 0, 0, 0.1) !important; }
-  .form-group[data-is-invalid="true"][data-is-invalid="true"] .bar:before, .form-group[data-is-invalid="true"][data-is-invalid="true"] .bar:after, .form-group[data-is-empty="true"][data-is-invalid="true"] .bar:before, .form-group[data-is-empty="true"][data-is-invalid="true"] .bar:after {
+  .form form[data-is-invalid="true"][data-is-invalid="true"] .bar:before, .form form[data-is-invalid="true"][data-is-invalid="true"] .bar:after, .form form[data-is-empty="true"][data-is-invalid="true"] .bar:before, .form form[data-is-empty="true"][data-is-invalid="true"] .bar:after {
     background: #fbcea2; }
-  .form-group[data-is-invalid="true"][data-is-empty="true"] .text-box-label, .form-group[data-is-empty="true"][data-is-empty="true"] .text-box-label {
+  .form form[data-is-invalid="true"][data-is-empty="true"] .text-box-label, .form form[data-is-empty="true"][data-is-empty="true"] .text-box-label {
     color: #16a085 !important; }
-  .form-group[data-is-invalid="true"][data-is-empty="true"] .bar:before, .form-group[data-is-invalid="true"][data-is-empty="true"] .bar:after, .form-group[data-is-empty="true"][data-is-empty="true"] .bar:before, .form-group[data-is-empty="true"][data-is-empty="true"] .bar:after {
+  .form form[data-is-invalid="true"][data-is-empty="true"] .bar:before, .form form[data-is-invalid="true"][data-is-empty="true"] .bar:after, .form form[data-is-empty="true"][data-is-empty="true"] .bar:before, .form form[data-is-empty="true"][data-is-empty="true"] .bar:after {
     background: red; }
-  .form-group .text-box {
+  .form form .text-box {
     padding: 2px 0;
     width: 300px;
     height: 50px;
@@ -464,35 +450,35 @@ header {
     outline: none;
     background-color: #fbcea2;
     box-sizing: border-box; }
-    .form-group .text-box:focus ~ .text-box-label, .form-group .text-box:valid ~ .text-box-label {
+    .form form .text-box:focus ~ .text-box-label, .form form .text-box:valid ~ .text-box-label {
       position: absolute;
       top: -25px;
       left: 5%;
       font-size: 1em;
       color: #383A3B; }
-    .form-group .text-box:focus ~ .bar:before, .form-group .text-box:focus ~ .bar:after, .form-group .text-box:valid ~ .bar:before, .form-group .text-box:valid ~ .bar:after {
+    .form form .text-box:focus ~ .bar:before, .form form .text-box:focus ~ .bar:after, .form form .text-box:valid ~ .bar:before, .form form .text-box:valid ~ .bar:after {
       width: 50%; }
-    .form-group .text-box:invalid {
+    .form form .text-box:invalid {
       box-shadow: none; }
-  .form-group .bar {
+  .form form .bar {
     position: absolute;
     width: 100%;
     left: 0;
     bottom: 2px; }
-    .form-group .bar:before, .form-group .bar:after {
+    .form form .bar:before, .form form .bar:after {
       content: '';
       position: absolute;
       width: 0;
       height: 2px;
       background: #757778;
       transition: all .2s ease; }
-    .form-group .bar:before {
+    .form form .bar:before {
       left: 50%;
       border-bottom-right-radius: 2px; }
-    .form-group .bar:after {
+    .form form .bar:after {
       right: 50%;
       border-bottom-left-radius: 2px; }
-  .form-group .text-box-label {
+  .form form .text-box-label {
     position: absolute;
     display: block;
     top: 12px;
@@ -547,7 +533,22 @@ button:hover:before {
     .card-images div img:nth-of-type(1) {
       align-self: center; }
 
+.card-images {
+  display: flex;
+  flex-direction: column;
+  align-items: center; }
+
+.card-readings {
+  display: flex;
+  flex-direction: column;
+  align-items: center; }
+  .card-readings .user-question {
+    height: 80px; }
+
 html {
   background-color: #fbcea2; }
+
+button#show {
+  display: none; }
 
 /*# sourceMappingURL=main.css.map */

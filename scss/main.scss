@@ -3,10 +3,12 @@
 @import "header";
 @import "form";
 @import "celticcross-layout";
+@import "layout";
 
 html {
   background-color: $color-one;
 }
-.user-question {
-  height: 300px;
+
+button#show {
+  display: none;
 }

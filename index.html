@@ -4,7 +4,7 @@
     <meta charset="utf-8">
     <script src="https://code.jquery.com/jquery-3.1.1.min.js"   integrity="sha256-hVVnYaiADRTO2PzUGmuLJr8BLUSjGIZsDYGmIJLv2b8="crossorigin="anonymous"></script>
     <script type="text/javascript" src="js/scripts.js"></script>
-      <script type="text/javascript" src="js/front-end.js"></script>
+    <script type="text/javascript" src="js/front-end.js"></script>
     <link rel="stylesheet" href="css/main.css" media="screen" title="no title">
     <title></title>
   </head>
@@ -17,8 +17,7 @@
         <img src="img/cup.png" alt="tarot cup" />
         <img src="img/Sword.png" alt="tarot sword" />
       </div>
-      <div id="line">
-      </div>
+      <div id="line"></div>
       <div class="form">
         <form>
           <input type="text" id="textBoxAlt" class="text-box" required />
@@ -27,17 +26,21 @@
           <button id="btn" type="submit" name="button">submit</button>
         </form>
      </div>
-
+     <button id="show"type="button" name="button"><img src="img/Pentacle.png" alt="button" /></button>
     </header>
 
+
     <section class="card-images">
-
+      <div class="layout"></div>
+      <button id="interpret"type="button" name="button">interpret</button>
     </section>
+
+
+
     <section class="card-readings">
-      <div class="user-question">
-
-      </div>
-
+      <div class="user-question"></div>
+      <div class="interpretations"></div>
+      <button id="another-reading" type="button" name="button">get another reading</button>
     </section>
 
 

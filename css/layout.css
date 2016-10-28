@@ -1,0 +1,13 @@
+.card-images {
+  display: flex;
+  flex-direction: column;
+  align-items: center; }
+
+.card-readings {
+  display: flex;
+  flex-direction: column;
+  align-items: center; }
+  .card-readings .user-question {
+    height: 80px; }
+
+/*# sourceMappingURL=layout.css.map */

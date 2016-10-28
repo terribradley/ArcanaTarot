@@ -1,0 +1,16 @@
+.card-images {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+}
+
+
+.card-readings {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  .user-question {
+    height: 80px;
+  }
+}

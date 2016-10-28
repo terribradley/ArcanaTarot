@@ -175,7 +175,7 @@ $(function() {
     $containerTwo.append($text);
   });
 
-  $('.card-images').append($container);
-  $('.card-readings').append($containerTwo);
+  $('.layout').append($container);
+  $('.interpretations').append($containerTwo);
 
 });

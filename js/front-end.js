@@ -1,10 +1,33 @@
 
 
-$(document).ready(function(event) {
+$(document).ready(function() {
+  $('.card-images').hide();
+  $('.card-readings').hide();
 
-  $('#btn').click(function() {
+  $('.form form').submit(function(event) {
     var question = $('input#textBoxAlt').val();
-    $('.user-question').text(question);
+    $('.user-question').append('<h1>' + question + '</h1>');
+    $('form').empty();
+    $('button#show').show();
+    event.preventDefault();
+  });
+
+  $('button#show').click(function(event) {
+    $('.card-images').show();
+    event.preventDefault();
+  });
+
+  $('button#interpret').click(function(event) {
+    $('.card-readings').show();
+    event.preventDefault();
+  });
+
+  $('button#another-reading').click(function() {
+    alert("another");
+    location.reload();
+  });
+  
+
 
     // var div = $("#line");
     // var button = $("#btn");
@@ -21,10 +44,6 @@ $(document).ready(function(event) {
     // // div.animate({rotateX: "90deg"}, "slow");
     // html.animate({scrollTop: $(".card-images").offset().top}, 2000);
     // button.animate({right: '-900px'}, 2000);
-
-    event.preventDefault();
-  });
-
 
 
 
