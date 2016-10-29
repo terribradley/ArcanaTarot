@@ -4,8 +4,38 @@
   .card-images div {
     display: flex;
     flex-wrap: wrap;
+    position: relative;
     width: 100%; }
     .card-images div img:nth-of-type(1) {
-      align-self: center; }
+      background-color: blue;
+      margin-left: 30%;
+      margin-right: 36%;
+      margin-top: 10%; }
+    .card-images div img:nth-of-type(2) {
+      align-self: flex-start; }
+    .card-images div img:nth-of-type(3) {
+      margin-right: 15%; }
+    .card-images div img:nth-of-type(4) {
+      margin-right: 13%; }
+    .card-images div img:nth-of-type(6) {
+      margin-left: 7.5%;
+      margin-top: -9%;
+      align-self: flex-start; }
+    .card-images div img:nth-of-type(7) {
+      margin-left: 30%;
+      margin-right: 36%; }
+    .card-images div img:nth-of-type(8) {
+      margin-top: -9%;
+      align-self: flex-start; }
+    .card-images div img:nth-of-type(9) {
+      margin-left: 81.5%;
+      margin-top: -8%; }
+    .card-images div img:last-of-type {
+      position: absolute;
+      top: 384px;
+      right: 55%;
+      -ms-transform: rotate(90deg);
+      -webkit-transform: rotate(90deg);
+      transform: rotate(90deg); }
 
 /*# sourceMappingURL=celticcross-layout.css.map */

@@ -4,29 +4,35 @@ $(document).ready(function() {
   $('.card-images').hide();
   $('.card-readings').hide();
 
-  $('.form form').submit(function(event) {
+  $('form').submit(function(event) {
+    event.preventDefault();
     var question = $('input#textBoxAlt').val();
-    $('.user-question').append('<h1>' + question + '</h1>');
+    $('.user-question').append('<h1>This is your question: ' + question + '</h1>');
     $('form').empty();
-    $('button#show').show();
-    event.preventDefault();
+    $('#show').show();
   });
 
-  $('button#show').click(function(event) {
+  $('#show').click(function(event) {
+    event.preventDefault();
     $('.card-images').show();
-    event.preventDefault();
+    $("html, body").animate({
+			scrollTop: $(".card-images").offset().top
+		}, 2000);
   });
 
-  $('button#interpret').click(function(event) {
-    $('.card-readings').show();
+  $('#interpret').click(function(event) {
     event.preventDefault();
+    $('.card-readings').show();
+    $("html, body").animate({
+      scrollTop: $(".card-readings").offset().top
+    }, 2000);
   });
 
   $('button#another-reading').click(function() {
     alert("another");
     location.reload();
   });
-  
+
 
 
     // var div = $("#line");
