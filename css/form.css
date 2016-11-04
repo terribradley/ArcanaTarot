@@ -1,21 +1,21 @@
 /*
 Error: Undefined variable: "$color-one".
-        on line 32 of scss/form.scss
+        on line 28 of scss/form.scss
 
-27:         text-shadow: 1px 1px 0 rgba(0,0,0,.1) !important;
-28:       }
-29: 
-30:       .bar {
-31:         &:before, &:after {
-32:           background: $color-one;
-33:         }
-34:       }
-35:     }
-36: 
-37:     &[data-is-empty="true"] {
+23:         color: red !important;
+24:         text-shadow: 1px 1px 0 rgba(0,0,0,.1) !important;
+25:       }
+26:       .bar {
+27:         &:before, &:after {
+28:           background: $color-one;
+29:         }
+30:       }
+31:     }
+32:     &[data-is-empty="true"] {
+33:       .text-box-label {
 
 Backtrace:
-scss/form.scss:32
+scss/form.scss:28
 /Library/Ruby/Gems/2.0.0/gems/sass-3.4.22/lib/sass/script/tree/variable.rb:49:in `_perform'
 /Library/Ruby/Gems/2.0.0/gems/sass-3.4.22/lib/sass/script/tree/node.rb:58:in `perform'
 /Library/Ruby/Gems/2.0.0/gems/sass-3.4.22/lib/sass/tree/visitors/perform.rb:397:in `visit_prop'
@@ -111,4 +111,4 @@ scss/form.scss:32
 body:before {
   white-space: pre;
   font-family: monospace;
-  content: "Error: Undefined variable: \"$color-one\".\A         on line 32 of scss/form.scss\A \A 27:         text-shadow: 1px 1px 0 rgba(0,0,0,.1) !important;\A 28:       }\A 29: \A 30:       .bar {\A 31:         &:before, &:after {\A 32:           background: $color-one;\A 33:         }\A 34:       }\A 35:     }\A 36: \A 37:     &[data-is-empty=\"true\"] {"; }
+  content: "Error: Undefined variable: \"$color-one\".\A         on line 28 of scss/form.scss\A \A 23:         color: red !important;\A 24:         text-shadow: 1px 1px 0 rgba(0,0,0,.1) !important;\A 25:       }\A 26:       .bar {\A 27:         &:before, &:after {\A 28:           background: $color-one;\A 29:         }\A 30:       }\A 31:     }\A 32:     &[data-is-empty=\"true\"] {\A 33:       .text-box-label {"; }

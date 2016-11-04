@@ -1,6 +1,6 @@
 .card-images {
   width: 90%;
-  margin: 0 5%; }
+  margin: 80px 5%; }
   .card-images div {
     display: flex;
     flex-wrap: wrap;

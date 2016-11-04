@@ -1,13 +1,17 @@
 .card-images {
   display: flex;
   flex-direction: column;
-  align-items: center; }
+  align-items: center;
+  margin-bottom: 15%; }
 
 .card-readings {
   display: flex;
   flex-direction: column;
-  align-items: center; }
+  align-items: center;
+  margin-bottom: 80px; }
   .card-readings .user-question {
     height: 80px; }
+  .card-readings .user-readings {
+    margin-bottom: 10%; }
 
 /*# sourceMappingURL=layout.css.map */
