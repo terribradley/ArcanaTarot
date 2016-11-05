@@ -252,12 +252,16 @@ function shuffle(shufflearray) {
 $(function() {
 
   var cardsubset = shuffle(cardarray).slice(0,10);
-  var $container = $('<div class="images">');
+  var firstThree = cardsubset.slice(0,2);
+  var secondThree = cardsubset.slice(3,6);
+  var thirdFour = cardsubset.slice(7,10);
+  var $containerTop = $('<div class="top-images">');
+  var $containerMiddle = $('<div class="middle-images">');
+  var $containerBottom = $('<div class="bottom-images">');
   var $containerTwo = $('<div class="user-readings">');
 
   cardsubset.forEach(function(element, index, array) {
     var $img = $('<img>').attr('src', element.image);
-    // debugger;
     var $text = $('<p>' + element.reading + '</p>');
     $container.append($img);
     $containerTwo.append($text);
