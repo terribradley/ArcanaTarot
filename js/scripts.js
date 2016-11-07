@@ -12,7 +12,7 @@ var cardarray = [
     image: "img/card_4.png",
     reading: "The Emperor: Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna."
   },{
-    image: "img/Hierphant.png",
+    image: "img/Hierophant.png",
     reading: "The Hierophant Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna."
   },{
     image: "img/Lovers.png",
@@ -249,25 +249,28 @@ function shuffle(shufflearray) {
   return shufflearray;
 }
 
+function placeCards(cardCollection, $cardRegion, $interp) {
+  cardCollection.forEach(function(element, index, array) {
+    var $img = $('<img>').attr('src', element.image);
+    var $text = $('<p>' + element.reading + '</p>');
+
+    $cardRegion.append($img);
+    $interp.append($text);
+  });
+}
+
 $(function() {
+  // var $cardRegion = $('.layout');
+  var $interp = $('.interpretations');
 
   var cardsubset = shuffle(cardarray).slice(0,10);
+
   var firstThree = cardsubset.slice(0,2);
   var secondThree = cardsubset.slice(3,6);
   var thirdFour = cardsubset.slice(7,10);
-  var $containerTop = $('<div class="top-images">');
-  var $containerMiddle = $('<div class="middle-images">');
-  var $containerBottom = $('<div class="bottom-images">');
-  var $containerTwo = $('<div class="user-readings">');
 
-  cardsubset.forEach(function(element, index, array) {
-    var $img = $('<img>').attr('src', element.image);
-    var $text = $('<p>' + element.reading + '</p>');
-    $container.append($img);
-    $containerTwo.append($text);
-  });
-
-  $('.layout').append($container);
-  $('.interpretations').append($containerTwo);
+  placeCards(firstThree, $('.top-images'), $interp);
+  placeCards(secondThree, $('.middle-images'), $interp);
+  placeCards(thirdFour, $('.bottom-images'), $interp);
 
 });

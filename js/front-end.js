@@ -1,8 +1,7 @@
-
-
 $(document).ready(function() {
   $('.card-images').hide();
   $('.card-readings').hide();
+  // $('#show').hide();
 
   $('form').submit(function(event) {
     event.preventDefault();
