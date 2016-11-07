@@ -5,14 +5,13 @@ header {
   align-items: center;
   background-color: $color-one;
   position: relative;
-
+  margin-bottom: 12%;
   .header-images {
     width: 100%;
     padding-top: 3%;
     display: flex;
     justify-content: center;
     align-items: center;
-
     img {
       margin: 3%;
     }

@@ -263,11 +263,11 @@ $(function() {
   // var $cardRegion = $('.layout');
   var $interp = $('.interpretations');
 
-  var cardsubset = shuffle(cardarray).slice(0,10);
+  var cardsubset = shuffle(cardarray).slice(0,12);
 
-  var firstThree = cardsubset.slice(0,2);
-  var secondThree = cardsubset.slice(3,6);
-  var thirdFour = cardsubset.slice(7,10);
+  var firstThree = cardsubset.slice(0,3);
+  var secondThree = cardsubset.slice(4,7);
+  var thirdFour = cardsubset.slice(8,12);
 
   placeCards(firstThree, $('.top-images'), $interp);
   placeCards(secondThree, $('.middle-images'), $interp);
