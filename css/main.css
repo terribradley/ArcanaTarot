@@ -517,11 +517,13 @@ button #show {
     position: relative; }
     .card-images .celtic-center .top-images {
       position: absolute;
-      top: 175px;
-      left: 355px;
+      top: 278px;
+      left: 394px;
       display: flex;
       flex-direction: column;
       height: 400px; }
+      .card-images .celtic-center .top-images img {
+        width: 105px; }
       .card-images .celtic-center .top-images img:nth-of-type(2) {
         position: absolute;
         top: 0px;
@@ -529,9 +531,12 @@ button #show {
         transform: rotate(90deg); }
     .card-images .celtic-center .middle-images {
       display: flex;
-      height: 300px;
+      height: 325px;
       align-items: center;
-      margin-left: 20%; }
+      margin-left: 20%;
+      margin-top: 10%; }
+      .card-images .celtic-center .middle-images img {
+        width: 105px; }
       .card-images .celtic-center .middle-images img:first-of-type {
         align-self: flex-end;
         margin-right: 15%; }
@@ -545,6 +550,8 @@ button #show {
       flex-direction: column;
       margin-left: 20%;
       align-items: center; }
+      .card-images .celtic-center .bottom-images img {
+        width: 105px; }
 
 .card-readings {
   display: flex;
