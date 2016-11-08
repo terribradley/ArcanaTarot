@@ -58,7 +58,7 @@ var cardarray = [
     reading: "The Sun: Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna."
   },{
     image: "img/card_20.png",
-    reading: "Judgement: Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna."
+    reading: "Judgement:  A swift and conclusive decision. The resolution of a matter long unanswered. A change in point of view, most frequently towards greater enlightenment. Final balancing of karma."
   },{
     image: "img/card_21.png",
     reading: "The World: Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna."
@@ -85,7 +85,7 @@ var cardarray = [
     reading: "Eight of Cups: Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna."
   },{
     image: "img/card_30.png",
-    reading: "Seven of Cups: Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna."
+    reading: "Seven of Cups: Daydreams and things seen in the glass of contemplation. The scattering of energies by strong desires and unrealistic goals. The pursuit of illusions and the dissipation of energy on false choices. Intoxication, delirium, and hallucination, leading to the negation of effort. Under rare and extreme circumstances, may indicate the revelation of transcendental spiritual truth."
   },{
     image: "img/card_31.png",
     reading: "Six of Cups: Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna."
@@ -145,7 +145,7 @@ var cardarray = [
     reading: "Two of Swords: Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna."
   },{
     image: "img/card_50.png",
-    reading: "Ace of Swords: Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna."
+    reading: "Ace of Swords: The seed of victory - perhaps as yet unseen. A challenge to be met and solved through the invocation of force. An opportunity to bring reason and intelligence to bear in the pursuit of justice and truth. An excessive power that must not be abused. May suggest new ideas or information that can reveal a solution to the problem at hand."
   },{
     image: "img/card_50.png",
     reading: "King of Wands: Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna."
@@ -157,7 +157,7 @@ var cardarray = [
     reading: "Knight of Wands: Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna."
   },{
     image: "img/card_50.png",
-    reading: "Page of Wands: Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna."
+    reading: "Page of Wands: The essence of fire behaving as earth, such as wood or coal: The surprising appearance of a new passion. An adventurer who blazes through life, acting as a catalyst that others may harness. The intense enthusiasm and childlike imagination that fuels any new venture, needing only the application of mind and material to make it a success. Inner fire that can drive away fear and replace it with fury. Can represent a person of some timidity, but whose innate passion can be easily ignited. May indicate the birth of a child."
   },{
     image: "img/card_50.png",
     reading: "Ten of Wands: Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna."
@@ -172,7 +172,7 @@ var cardarray = [
     reading: "Seven of Wands: Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna."
   },{
     image: "img/card_50.png",
-    reading: "Six of Wands: Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna."
+    reading: "Six of Wands:  A sense of honor and satisfaction at the resolution of an important matter. Triumph after great struggle. Jubilation at the hearing of good news. The realization of hopes and desires."
   },{
     image: "img/card_50.png",
     reading: "Five of Wands: Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna."
