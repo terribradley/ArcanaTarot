@@ -3,16 +3,16 @@ Error: Undefined variable: "$color-one".
         on line 6 of scss/header.scss
 
 1: header {
-2:   min-height: 88vh;
+2:   min-height: 106vh;
 3:   display: flex;
 4:   flex-direction: column;
 5:   align-items: center;
 6:   background-color: $color-one;
 7:   position: relative;
-8:   margin-bottom: 12%;
-9:   .header-images {
-10:     width: 100%;
-11:     padding-top: 3%;
+8:   .header-images {
+9:     width: 100%;
+10:     padding-top: 3%;
+11:     display: flex;
 
 Backtrace:
 scss/header.scss:6
@@ -67,4 +67,4 @@ scss/header.scss:6
 body:before {
   white-space: pre;
   font-family: monospace;
-  content: "Error: Undefined variable: \"$color-one\".\A         on line 6 of scss/header.scss\A \A 1: header {\A 2:   min-height: 88vh;\A 3:   display: flex;\A 4:   flex-direction: column;\A 5:   align-items: center;\A 6:   background-color: $color-one;\A 7:   position: relative;\A 8:   margin-bottom: 12%;\A 9:   .header-images {\A 10:     width: 100%;\A 11:     padding-top: 3%;"; }
+  content: "Error: Undefined variable: \"$color-one\".\A         on line 6 of scss/header.scss\A \A 1: header {\A 2:   min-height: 106vh;\A 3:   display: flex;\A 4:   flex-direction: column;\A 5:   align-items: center;\A 6:   background-color: $color-one;\A 7:   position: relative;\A 8:   .header-images {\A 9:     width: 100%;\A 10:     padding-top: 3%;\A 11:     display: flex;"; }

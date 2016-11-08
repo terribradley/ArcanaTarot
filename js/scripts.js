@@ -251,7 +251,7 @@ function shuffle(shufflearray) {
 
 function placeCards(cardCollection, $cardRegion, $interp) {
   cardCollection.forEach(function(element, index, array) {
-    var $img = $('<img>').attr('src', element.image);
+    var $img = $('<img data-lightbox="celtic-cross">').attr('src', element.image);
     var $text = $('<p>' + element.reading + '</p>');
 
     $cardRegion.append($img);

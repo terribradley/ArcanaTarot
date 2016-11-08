@@ -13,22 +13,23 @@ $(document).ready(function() {
 
   $('#show').click(function(event) {
     event.preventDefault();
+    $(this).toggleClass('rotated');
     $('.card-images').show();
     $("html, body").animate({
-			scrollTop: $(".card-images").offset().top
-		}, 2000);
+			scrollTop: $(".card-images").offset().top + 180
+		}, 3000);
   });
 
   $('#interpret').click(function(event) {
     event.preventDefault();
+    $(this).toggleClass('rotated');
     $('.card-readings').show();
     $("html, body").animate({
-      scrollTop: $(".card-readings").offset().top
+      scrollTop: $(".card-readings").offset().top + 150
     }, 2000);
   });
 
   $('button#another-reading').click(function() {
-    alert("another");
     location.reload();
   });
 

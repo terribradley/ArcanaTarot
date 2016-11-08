@@ -2,7 +2,6 @@
 @import "variables";
 @import "header";
 @import "form";
-@import "celticcross-layout";
 @import "layout";
 
 html {
@@ -11,4 +10,19 @@ html {
 
 #show {
   display: none;
+  height: 258.5px;
+  position: absolute;
+  bottom: -20%;
+  left: 37%;
+  z-index: 100;
+
+}
+button img {
+  width: 250px;
+  z-index: 20;
+}
+
+.rotated {
+  transform: rotate(360deg);
+  transition-duration: 5s;
 }

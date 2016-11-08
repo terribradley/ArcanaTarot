@@ -105,7 +105,8 @@ form {
   }
 }
 button {
-  background:$color-one;
+  background:transparentize($color-one, 1
+  );
   color: $color-two;
   border: none;
   position: relative;
@@ -117,7 +118,7 @@ button {
   outline: none;
 }
 button:hover{
-  background: $color-one;
+  background: transparentize($color-one, 1);
   color: $color-three;
 }
 
@@ -141,6 +142,6 @@ button:hover{
 //   width: 100%;
 //   transition: 800ms ease all;
 // }
-button #show {
-  margin-top: 2%;
-}
+// button #show {
+//   margin-top: 2%;
+// }
