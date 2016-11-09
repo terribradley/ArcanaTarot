@@ -73,11 +73,13 @@
   margin-bottom: 10%;
   background-color: $color-five;
   min-height: 131vh;
+  padding: 5%;
   .user-question {
     height: 80px;
     padding-top: 12%;
   }
   .interpretations {
     margin-bottom: 5%;
+    text-align: center;
   }
 }

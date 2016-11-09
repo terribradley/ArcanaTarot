@@ -565,12 +565,14 @@ button:hover {
   align-items: center;
   margin-bottom: 10%;
   background-color: #97D0AF;
-  min-height: 131vh; }
+  min-height: 131vh;
+  padding: 5%; }
   .card-readings .user-question {
     height: 80px;
     padding-top: 12%; }
   .card-readings .interpretations {
-    margin-bottom: 5%; }
+    margin-bottom: 5%;
+    text-align: center; }
 
 html {
   background-color: #fbcea2; }
