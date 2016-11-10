@@ -4,25 +4,16 @@
 @import "form";
 @import "layout";
 @import url('https://fonts.googleapis.com/css?family=Muli');
-html {
+
+body {
   background-color: $color-one;
   font-family: 'Muli', sans-serif;
-}
-
-#show {
-  display: none;
-  height: 258.5px;
-  position: absolute;
-  bottom: -13%;
-  left: 42%;
-  z-index: 100;
-}
-button img {
-  width: 250px;
-  z-index: 20;
-}
-
-.rotated {
-  transform: rotate(360deg);
-  transition-duration: 5s;
+  button img {
+    width: 250px;
+    z-index: 20;
+  }
+  .rotated {
+    transform: rotate(360deg);
+    transition-duration: 5s;
+  }
 }

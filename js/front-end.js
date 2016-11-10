@@ -1,6 +1,7 @@
 $(document).ready(function() {
   $('.card-images').hide();
   $('.card-readings').hide();
+
   $('.card-info:first-of-type p').prepend('<div><h2>The Present<br>This card reveals influences, people, and factors currently involved with your question or situation </h2></div>');
 
   $('.card-info:nth-of-type(2) p').prepend('<div><h2>Challenges<br> This card reveals the nature of the obstacles immediately before you.</h2></div>');
@@ -26,10 +27,9 @@ $(document).ready(function() {
     event.preventDefault();
     var question = $('#textBoxAlt').val();
     $('.user-question').append('<h1>The readings below pertain to what was on your mind: ' + question + '</h1>');
-    $('form').empty();
     var div = $('#line');
-    // div.show();
-    // div.addClass('grow');
+    div.show();
+    $('form').empty();
     $('#show').show();
   });
 

@@ -422,43 +422,36 @@ header {
       height: 350px; }
       header .header-images img:nth-of-type(2), header .header-images img:nth-of-type(3), header .header-images img:nth-of-type(4) {
         height: 230px; }
+  header #show {
+    display: none;
+    height: 258.5px;
+    position: absolute;
+    bottom: -11%;
+    left: 43%;
+    z-index: 100; }
   header #line {
     display: none;
+    -webkit-animation: flip-line 7s linear 1;
+    -webkit-perspective: 500px;
     position: absolute;
-    top: 62%;
-    left: 39%;
-    height: 5px;
-    width: 200px;
+    top: 57%;
+    left: 40%;
+    height: 250px;
+    width: 408px;
     z-index: 5;
     background-image: url("../img/card_back2.png");
     background-size: cover; }
-  header .grow {
-    height: 100px;
-    width: 408px;
-    transform: rotateX(150deg);
-    transition: height 1s, width 2s, transform 3s; }
 
+@-webkit-keyframes flip-line {
+  0% {
+    -webkit-transform: rotateX(90deg); }
+  90% {
+    -webkit-transform: rotateX(170deg); }
+  100% {
+    -webkit-transform: rotateX(190deg); } }
 form {
-  margin-top: 40px; }
-
-form {
+  margin-top: 40px;
   position: relative; }
-  form[data-is-invalid="true"] .text-box-label, form[data-is-empty="true"] .text-box-label {
-    position: absolute;
-    top: -15px;
-    font-size: 2em;
-    text-shadow: 1px 1px 0 rgba(0, 0, 0, 0.5); }
-  form[data-is-invalid="true"] .bar:before, form[data-is-invalid="true"] .bar:after, form[data-is-empty="true"] .bar:before, form[data-is-empty="true"] .bar:after {
-    width: 100%; }
-  form[data-is-invalid="true"][data-is-invalid="true"] .text-box-label, form[data-is-empty="true"][data-is-invalid="true"] .text-box-label {
-    color: red !important;
-    text-shadow: 1px 1px 0 rgba(0, 0, 0, 0.1) !important; }
-  form[data-is-invalid="true"][data-is-invalid="true"] .bar:before, form[data-is-invalid="true"][data-is-invalid="true"] .bar:after, form[data-is-empty="true"][data-is-invalid="true"] .bar:before, form[data-is-empty="true"][data-is-invalid="true"] .bar:after {
-    background: #fbcea2; }
-  form[data-is-invalid="true"][data-is-empty="true"] .text-box-label, form[data-is-empty="true"][data-is-empty="true"] .text-box-label {
-    color: #16a085 !important; }
-  form[data-is-invalid="true"][data-is-empty="true"] .bar:before, form[data-is-invalid="true"][data-is-empty="true"] .bar:after, form[data-is-empty="true"][data-is-empty="true"] .bar:before, form[data-is-empty="true"][data-is-empty="true"] .bar:after {
-    background: red; }
   form .text-box {
     padding: 2px 0;
     width: 300px;
@@ -490,7 +483,7 @@ form {
       position: absolute;
       width: 0;
       height: 2px;
-      background: #757778;
+      background: black;
       transition: all .2s ease; }
     form .bar:before {
       left: 50%;
@@ -532,7 +525,7 @@ button:hover {
   .card-images #interpret {
     position: absolute;
     bottom: -9%;
-    left: 42%;
+    left: 43%;
     height: 259px; }
   .card-images .celtic-center {
     display: flex;
@@ -606,24 +599,14 @@ button:hover {
         width: 160px;
         margin-right: 2%; }
 
-html {
+body {
   background-color: #fbcea2;
   font-family: 'Muli', sans-serif; }
-
-#show {
-  display: none;
-  height: 258.5px;
-  position: absolute;
-  bottom: -13%;
-  left: 42%;
-  z-index: 100; }
-
-button img {
-  width: 250px;
-  z-index: 20; }
-
-.rotated {
-  transform: rotate(360deg);
-  transition-duration: 5s; }
+  body button img {
+    width: 250px;
+    z-index: 20; }
+  body .rotated {
+    transform: rotate(360deg);
+    transition-duration: 5s; }
 
 /*# sourceMappingURL=main.css.map */

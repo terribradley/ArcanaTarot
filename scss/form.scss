@@ -1,47 +1,7 @@
 
 form {
-    margin-top: 40px;
-  }
-
-form {
+  margin-top: 40px;
   position: relative;
-  &[data-is-invalid="true"],
-  &[data-is-empty="true"] {
-    .text-box-label {
-      position: absolute;
-      top: -15px;
-      font-size: 2em;
-      text-shadow: 1px 1px 0 rgba(0,0,0,.5);
-    }
-    .bar {
-      &:before, &:after {
-        width: 100%;
-      }
-    }
-    &[data-is-invalid="true"] {
-      .text-box-label {
-        color: red !important;
-        text-shadow: 1px 1px 0 rgba(0,0,0,.1) !important;
-      }
-      .bar {
-        &:before, &:after {
-          background: $color-one;
-        }
-      }
-    }
-    &[data-is-empty="true"] {
-      .text-box-label {
-        color: #16a085 !important;
-      }
-
-      .bar {
-        &:before, &:after {
-          background: red;
-        }
-      }
-    }
-  }
-
   .text-box {
     padding: 2px 0;
     width: 300px;
@@ -63,14 +23,15 @@ form {
         color: #383A3B;
       }
       ~.bar {
-        &:before, &:after { width: 50%; }
+        &:before, &:after {
+          width: 50%;
+        }
       }
     }
     &:invalid {
       box-shadow: none;
     }
   }
-
   .bar {
     position: absolute;
     width: 100%;
@@ -81,7 +42,7 @@ form {
       position: absolute;
       width: 0;
       height: 2px;
-      background: $color-three;
+      background: $color-two;
       transition: all .2s ease;
     }
     &:before {
@@ -93,7 +54,6 @@ form {
       border-bottom-left-radius: 2px;
     }
   }
-
   .text-box-label {
     position: absolute;
     display: block;
@@ -122,6 +82,43 @@ button:hover{
   background: transparentize($color-one, 1);
   color: $color-three;
 }
+
+// &[data-is-invalid="true"],
+// &[data-is-empty="true"] {
+//   .text-box-label {
+//     position: absolute;
+//     top: -15px;
+//     font-size: 2em;
+//     text-shadow: 1px 1px 0 rgba(0,0,0,.5);
+//   }
+//   .bar {
+//     &:before, &:after {
+//       width: 100%;
+//     }
+//   }
+//   &[data-is-invalid="true"] {
+//     .text-box-label {
+//       color: red !important;
+//       text-shadow: 1px 1px 0 rgba(0,0,0,.1) !important;
+//     }
+//     .bar {
+//       &:before, &:after {
+//         background: $color-one;
+//       }
+//     }
+//   }
+//   &[data-is-empty="true"] {
+//     .text-box-label {
+//       color: #16a085 !important;
+//     }
+//
+//     .bar {
+//       &:before, &:after {
+//         background: red;
+//       }
+//     }
+//   }
+// }
 
 // button:before,button:after{
 //   content: '';

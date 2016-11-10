@@ -20,21 +20,31 @@ header {
       }
     }
   }
+  #show {
+    display: none;
+    height: 258.5px;
+    position: absolute;
+    bottom: -11%;
+    left: 43%;
+    z-index: 100;
+  }
   #line {
     display: none;
+    -webkit-animation: flip-line 7s linear 1;
+    -webkit-perspective: 500px;
     position: absolute;
-    top: 62%;
-    left: 39%;
-    height: 5px;
-    width: 200px;
+    top: 57%;
+    left: 40%;
+    height: 250px;
+    width: 408px;
     z-index: 5;
     background-image: url("../img/card_back2.png");
     background-size: cover;
   }
-  .grow {
-    height: 100px;
-    width: 408px;
-    transform: rotateX(150deg);
-    transition: height 1s, width 2s, transform 3s;
-  }
+}
+
+@-webkit-keyframes flip-line {
+  0% { -webkit-transform:rotateX(90deg) ; }
+  90% { -webkit-transform:rotateX(170deg); }
+  100% { -webkit-transform: rotateX(190deg); }
 }
