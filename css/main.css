@@ -404,7 +404,7 @@ template {
   display: none; }
 
 header {
-  min-height: 106vh;
+  min-height: 100vh;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -412,16 +412,26 @@ header {
   position: relative; }
   header .header-images {
     width: 100%;
-    padding-top: 3%;
+    padding-top: 10%;
     display: flex;
     justify-content: center;
     align-items: center;
     margin-bottom: 2%; }
     header .header-images img {
       margin: 3%;
-      height: 250px; }
+      height: 350px; }
       header .header-images img:nth-of-type(2), header .header-images img:nth-of-type(3), header .header-images img:nth-of-type(4) {
-        height: 130px; }
+        height: 230px; }
+  header #line {
+    display: none;
+    position: absolute;
+    top: 62%;
+    left: 39%;
+    height: 2px;
+    width: 200px;
+    z-index: 5;
+    background-image: url("../img/card_back2.png");
+    background-size: cover; }
 
 form {
   margin-top: 40px; }
@@ -513,11 +523,11 @@ button:hover {
   flex-direction: column;
   position: relative;
   background-color: rgba(255, 255, 255, 0.2);
-  height: 138vh; }
+  height: 120vh; }
   .card-images #interpret {
     position: absolute;
-    bottom: -14%;
-    left: 37%;
+    bottom: -9%;
+    left: 42%;
     height: 259px; }
   .card-images .celtic-center {
     display: flex;
@@ -526,13 +536,15 @@ button:hover {
     margin-bottom: 20%; }
     .card-images .celtic-center .top-images {
       position: absolute;
-      top: 365px;
-      left: 430px;
+      top: 62%;
+      left: 33%;
       display: flex;
       flex-direction: column;
       height: 400px; }
       .card-images .celtic-center .top-images a img {
-        width: 105px; }
+        width: 160px; }
+      .card-images .celtic-center .top-images a:first-of-type {
+        margin-bottom: 19%; }
       .card-images .celtic-center .top-images a:nth-of-type(2) {
         position: absolute;
         top: 0px;
@@ -540,12 +552,12 @@ button:hover {
         transform: rotate(90deg); }
     .card-images .celtic-center .middle-images {
       display: flex;
-      height: 325px;
+      height: 54vh;
       align-items: center;
       margin-left: 20%;
       margin-top: 5%; }
       .card-images .celtic-center .middle-images a img {
-        width: 105px; }
+        width: 160px; }
       .card-images .celtic-center .middle-images a:first-of-type {
         align-self: flex-end; }
       .card-images .celtic-center .middle-images a:nth-of-type(2) {
@@ -561,16 +573,16 @@ button:hover {
       align-items: center;
       height: 100vh; }
       .card-images .celtic-center .bottom-images a img {
-        width: 105px; }
+        width: 160px; }
 
 .card-readings {
   display: flex;
   flex-direction: column;
   align-items: center;
   margin-bottom: 10%;
-  background-color: #97D0AF;
+  background-color: #97d0af;
   min-height: 131vh;
-  padding: 5%; }
+  padding: 5% 20%; }
   .card-readings .user-question {
     padding-top: 12%;
     width: 80%;
@@ -581,13 +593,12 @@ button:hover {
     .card-readings .interpretations .card-info {
       display: flex;
       align-items: center;
-      height: 150px;
-      margin: 2%; }
+      margin: 3%; }
       .card-readings .interpretations .card-info h2 {
         font-size: 1.2em;
         text-align: center; }
       .card-readings .interpretations .card-info img {
-        width: 105px;
+        width: 160px;
         margin-right: 2%; }
 
 html {
@@ -598,8 +609,8 @@ html {
   display: none;
   height: 258.5px;
   position: absolute;
-  bottom: -20%;
-  left: 37%;
+  bottom: -13%;
+  left: 42%;
   z-index: 100; }
 
 button img {

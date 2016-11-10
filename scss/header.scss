@@ -1,5 +1,5 @@
 header {
-  min-height: 106vh;
+  min-height: 100vh;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -7,32 +7,35 @@ header {
   position: relative;
   .header-images {
     width: 100%;
-    padding-top: 3%;
+    padding-top: 10%;
     display: flex;
     justify-content: center;
     align-items: center;
     margin-bottom: 2%;
     img {
       margin: 3%;
-      height: 250px;
+      height: 350px;
       &:nth-of-type(2), &:nth-of-type(3), &:nth-of-type(4) {
-        height: 130px
+        height: 230px
       }
     }
   }
 
 
-  // #line {
-  //   display: none;
-  //   position: absolute;
-  //   top: 92%;
-  //   left: 23.8%;
-  //   height: 1px;
-  //   width: 301px;
-  //   z-index: 5;
-  //   background-image: url("../img/card_back.png");
-  //   background-size: cover;
-  //
+  #line {
+    display: none;
+    position: absolute;
+    top: 62%;
+    left: 39%;
+    height: 2px;
+    width: 200px;
+    z-index: 5;
+    background-image: url("../img/card_back2.png");
+    background-size: cover;
+  }
+  // .grow {
+  //   transform: scale(2.0);
+  //   -webkit-transform: scale(2.0) rotate(180deg);
   // }
   // button {
   //   position: absolute;
