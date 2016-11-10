@@ -418,7 +418,10 @@ header {
     align-items: center;
     margin-bottom: 2%; }
     header .header-images img {
-      margin: 3%; }
+      margin: 3%;
+      height: 250px; }
+      header .header-images img:nth-of-type(2), header .header-images img:nth-of-type(3), header .header-images img:nth-of-type(4) {
+        height: 130px; }
 
 form {
   margin-top: 40px; }
