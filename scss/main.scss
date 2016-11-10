@@ -3,9 +3,10 @@
 @import "header";
 @import "form";
 @import "layout";
-
+@import url('https://fonts.googleapis.com/css?family=Muli');
 html {
   background-color: $color-one;
+  font-family: 'Muli', sans-serif;
 }
 
 #show {

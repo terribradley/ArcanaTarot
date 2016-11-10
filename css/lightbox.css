@@ -34,10 +34,10 @@ body.lb-disable-scrolling {
   height: auto;
   max-width: inherit;
   max-height: none;
-  border-radius: 3px;
+  border-radius: 2px;
 
   /* Image border */
-  border: 4px solid white;
+  border: 2px solid white;
 }
 
 .lightbox a img {
@@ -48,13 +48,13 @@ body.lb-disable-scrolling {
   position: relative;
   *zoom: 1;
   width: 250px;
-  height: 250px;
+  height: 350px;
   margin: 0 auto;
-  border-radius: 4px;
+
 
   /* Background color behind image.
      This is visible during transitions. */
-  background-color: white;
+  /*background-color: white;*/
 }
 
 .lb-outerContainer:after {

@@ -23,10 +23,10 @@
       display: flex;
       flex-direction: column;
       height: 400px;
-      img {
+      a img {
         width: 105px;
       }
-      img:nth-of-type(2) {
+      a:nth-of-type(2) {
         position: absolute;
         top: 0px;
         left: 0px;
@@ -39,17 +39,17 @@
       align-items: center;
       margin-left: 20%;
       margin-top: 5%;
-      img {
+      a img {
         width: 105px;
       }
-      img:first-of-type {
+      a:first-of-type {
         align-self: flex-end;
       }
-      img:nth-of-type(2) {
+      a:nth-of-type(2) {
         align-self: flex-start;
         margin-left: 75px;
       }
-      img:nth-of-type(3) {
+      a:nth-of-type(3) {
         align-self: flex-end;
         margin-left: 75px;
       }
@@ -60,7 +60,7 @@
       margin-left: 5%;
       align-items: center;
       height: 100vh;
-      img {
+      a img {
         width: 105px;
       }
     }
@@ -80,6 +80,20 @@
   }
   .interpretations {
     margin-bottom: 5%;
-    text-align: center;
+    text-align: left;
+    .card-info {
+      display: flex;
+      align-items: center;
+      height: 150px;
+      margin: 2%;
+      h2 {
+        font-size: 1.2em;
+        text-align: center;
+      }
+      img {
+        width: 105px;
+        margin-right: 2%
+      }
+    }
   }
 }
