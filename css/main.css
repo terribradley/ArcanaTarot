@@ -569,8 +569,9 @@ button:hover {
   min-height: 131vh;
   padding: 5%; }
   .card-readings .user-question {
-    height: 80px;
-    padding-top: 12%; }
+    padding-top: 12%;
+    width: 80%;
+    margin-left: auto; }
   .card-readings .interpretations {
     margin-bottom: 5%;
     text-align: left; }
