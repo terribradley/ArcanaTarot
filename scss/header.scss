@@ -20,26 +20,21 @@ header {
       }
     }
   }
-
-
   #line {
     display: none;
     position: absolute;
     top: 62%;
     left: 39%;
-    height: 2px;
+    height: 5px;
     width: 200px;
     z-index: 5;
     background-image: url("../img/card_back2.png");
     background-size: cover;
   }
-  // .grow {
-  //   transform: scale(2.0);
-  //   -webkit-transform: scale(2.0) rotate(180deg);
-  // }
-  // button {
-  //   position: absolute;
-  //   right: -200px;
-  //   bottom: 10px;
-  // }
+  .grow {
+    height: 100px;
+    width: 408px;
+    transform: rotateX(150deg);
+    transition: height 1s, width 2s, transform 3s;
+  }
 }

@@ -117,6 +117,7 @@ button {
   transition: 800ms ease all;
   outline: none;
 }
+
 button:hover{
   background: transparentize($color-one, 1);
   color: $color-three;

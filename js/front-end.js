@@ -28,9 +28,8 @@ $(document).ready(function() {
     $('.user-question').append('<h1>The readings below pertain to what was on your mind: ' + question + '</h1>');
     $('form').empty();
     var div = $('#line');
-    div.show();
-    div.animate({height: '10px'}, 200)
-
+    // div.show();
+    // div.addClass('grow');
     $('#show').show();
   });
 
