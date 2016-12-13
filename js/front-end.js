@@ -38,7 +38,7 @@ $(document).ready(function() {
     $(this).toggleClass('rotated');
     $('.card-images').show();
     $("html, body").animate({
-			scrollTop: $(".card-images").offset().top + 180
+			scrollTop: $(".card-images").offset().top + 120
 		}, 3000);
   });
 

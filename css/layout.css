@@ -1,20 +1,21 @@
 /*
 Error: Undefined variable: "$color-four".
-        on line 5 of scss/layout.scss
+        on line 6 of scss/layout.scss
 
 1: .card-images {
 2:   display: flex;
 3:   flex-direction: column;
 4:   position: relative;
-5:   background-color: transparentize($color-four, .8);
-6:   height: 120vh;
-7:   #interpret {
-8:   position: absolute;
-9:   bottom: -9%;
-10:   left: 43%;
+5:   height: 165vh;
+6:   background-color: transparentize($color-four, .8);
+7:   @media screen and (min-width: 1020px) and (max-width: 1420px) {
+8:     height: 215vh;
+9:   }
+10:   @media screen and (min-width: 1430px) and (max-width: 1999px) {
+11:     height: 200vh;
 
 Backtrace:
-scss/layout.scss:5
+scss/layout.scss:6
 /Library/Ruby/Gems/2.0.0/gems/sass-3.4.22/lib/sass/script/tree/variable.rb:49:in `_perform'
 /Library/Ruby/Gems/2.0.0/gems/sass-3.4.22/lib/sass/script/tree/node.rb:58:in `perform'
 /Library/Ruby/Gems/2.0.0/gems/sass-3.4.22/lib/sass/script/tree/funcall.rb:173:in `perform_arg'
@@ -75,4 +76,4 @@ scss/layout.scss:5
 body:before {
   white-space: pre;
   font-family: monospace;
-  content: "Error: Undefined variable: \"$color-four\".\A         on line 5 of scss/layout.scss\A \A 1: .card-images {\A 2:   display: flex;\A 3:   flex-direction: column;\A 4:   position: relative;\A 5:   background-color: transparentize($color-four, .8);\A 6:   height: 120vh;\A 7:   #interpret {\A 8:   position: absolute;\A 9:   bottom: -9%;\A 10:   left: 43%;"; }
+  content: "Error: Undefined variable: \"$color-four\".\A         on line 6 of scss/layout.scss\A \A 1: .card-images {\A 2:   display: flex;\A 3:   flex-direction: column;\A 4:   position: relative;\A 5:   height: 165vh;\A 6:   background-color: transparentize($color-four, .8);\A 7:   @media screen and (min-width: 1020px) and (max-width: 1420px) {\A 8:     height: 215vh;\A 9:   }\A 10:   @media screen and (min-width: 1430px) and (max-width: 1999px) {\A 11:     height: 200vh;"; }

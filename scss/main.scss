@@ -9,8 +9,11 @@ body {
   background-color: $color-one;
   font-family: 'Muli', sans-serif;
   button img {
-    width: 250px;
+    width: 220px;
     z-index: 20;
+    @media screen and (min-width: 2000px) {
+      width: 250px;
+    }
   }
   .rotated {
     transform: rotate(360deg);

@@ -2,13 +2,28 @@
   display: flex;
   flex-direction: column;
   position: relative;
+  height: 165vh;
   background-color: transparentize($color-four, .8);
-  height: 120vh;
+  @media screen and (min-width: 1020px) and (max-width: 1420px) {
+    height: 215vh;
+  }
+  @media screen and (min-width: 1430px) and (max-width: 1999px) {
+    height: 200vh;
+  }
+  @media screen and (min-width: 2000px) {
+    height: 124vh;
+  }
   #interpret {
   position: absolute;
   bottom: -9%;
-  left: 43%;
+  left: 38.5%;
   height: 259px;
+  @media screen and (min-width: 1430px) and (max-width: 1999px) {
+    left: 42%;
+  }
+  @media screen and (min-width: 2000px) {
+    left: 45%;
+  }
   }
 
   .celtic-center {
@@ -16,9 +31,12 @@
     position: relative;
     padding-top: 10%;
     margin-bottom: 20%;
+    @media screen and (min-width: 2000px) {
+      padding-top: 5%;
+    }
     .top-images {
       position: absolute;
-      top: 62%;
+      top: 51%;
       left: 33%;
       display: flex;
       flex-direction: column;
@@ -27,7 +45,11 @@
         width: $card-size;
       }
       a:first-of-type {
-        margin-bottom: 19%;;
+        margin-bottom: 10%;
+        @media screen and (min-width: 2000px) {
+            margin-bottom: 19%;
+        }
+
       }
       a:nth-of-type(2) {
         position: absolute;
@@ -35,13 +57,36 @@
         left: 0px;
         transform: rotate(90deg);
       }
+      @media screen and (min-width: 1020px) and (max-width: 1420px) {
+        top: 62%;
+        left: 32%;
+      }
+      @media screen and (min-width: 1430px) and (max-width: 1999px) {
+        left: 36.4%;
+        top: 65%;
+      }
+      @media screen and (min-width: 2000px) {
+        left: 39.2%;
+        top: 68%
+      }
     }
     .middle-images {
       display: flex;
-      height: 54vh;
+      height: 73vh;
+      margin-left: 9%;
       align-items: center;
-      margin-left: 20%;
       margin-top: 5%;
+      @media screen and (min-width: 1020px) and (max-width: 1420px) {
+        height: 95vh;
+      }
+      @media screen and (min-width: 1430px) and (max-width: 1999px) {
+        margin-left: 20%;
+        height: 87vh;
+      }
+      @media screen and (min-width: 2000px) {
+        margin-left: 30%;
+        height: 53vh;
+      }
       a img {
         width: $card-size;
       }
@@ -76,7 +121,13 @@
   margin-bottom: 10%;
   background-color: $color-five;
   min-height: 131vh;
-  padding: 5% 20%;
+  padding: 5% 8%;
+  @media screen and (min-width: 1430px) and (max-width: 1999px) {
+    padding: 5% 20%;
+  }
+  @media screen and (min-width: 2000px) {
+    padding: 5% 25%;
+  }
   .user-question {
     padding-top: 12%;
     width: 80%;
@@ -98,5 +149,8 @@
         margin-right: 2%
       }
     }
+  }
+  #another-reading {
+    padding: 0 2em 0 9em;
   }
 }
